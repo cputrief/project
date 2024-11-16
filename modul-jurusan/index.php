@@ -17,7 +17,7 @@
             <div class="card">
                 <div class="card-header text-left">
                     <h3 class="float-start ">Data Jurusan</h3>
-                    <span class="float-end "><a class="btn btn-primary" href=""><i class="fa-solid fa-circle-plus"></i>Tambah Data</a></span>
+                    <span class="float-end "><a class="btn btn-primary" href="form.php"><i class="fa-solid fa-circle-plus"></i>Tambah Data</a></span>
                 </div>
                 <div class="card-body">
                 <h3></h3>
@@ -31,16 +31,33 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php 
+                        //  1. membuat koneksi 
+                            include_once("../koneksi.php");
+
+                        //  2. menampilkan 
+                            $tampil = "SELECT * FROM jurusans";
+
+                        //  3. jalankan query
+                            $proses = mysqli_query($koneksi,$tampil);
+
+                        //  4. looping data dari DB
+                            $nomor = 1;
+                            foreach($proses as $data){
+
+                        ?>
                         <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
+                        <th scope="row"><?=$nomor++?></th>
+                        <td><?=$data['kode']?></td>
+                        <td><?=$data['jurusan']?></td>
                         <td>
                             <a class="btn btn-info btn-sm" href=""><i class="fa fa-pen-to-square"></i></a>
                             <a class="btn btn-danger btn-sm" href=""><i class="fa fa-trash"></i></a>
                         </td>
                         </tr>
-                        
+                        <?php
+                            }
+                        ?>
                        
                     </tbody>
                     </table>
