@@ -16,7 +16,7 @@
           <a class="nav-link active" aria-current="page" href="/cutputri/project/modul-jurusan/index.php">Data jurusan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Data Dosen</a>
+          <a class="nav-link active" aria-current="page" href="/cutputri/PROJECT/modul-dosen/index.php">Data Dosen</a>
         </li>
 
 
