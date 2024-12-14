@@ -7,19 +7,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/cutputri/project/index.php">Beranda</a>
+          <a class="nav-link active" aria-current="page" href="/cutputri/PROJECT/index.php">Beranda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Data Mahasiswa</a>
+          <a class="nav-link active" aria-current="page" href="/cutputri/PROJECT/modul-mahasiswa/index.php">Data Mahasiswa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/cutputri/project/modul-jurusan/index.php">Data jurusan</a>
+          <a class="nav-link active" aria-current="page" href="/cutputri/PROJECT/modul-jurusan/index.php">Data Jurusan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/cutputri/PROJECT/modul-dosen/index.php">Data Dosen</a>
         </li>
-
-
+        
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
