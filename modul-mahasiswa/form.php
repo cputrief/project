@@ -54,7 +54,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Jurusan</label>
-                    <select name="jabatan" class="form-control" id="">
+                    <select name="jur" class="form-control" id="">
                         <option value="">-Pilih Jurusan-</option>
                         <?php
                             include('../koneksi.php');
@@ -70,11 +70,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Dosen Wali</label>
-                    <select name="jabatan" class="form-control" id="">
+                    <select name="dos" class="form-control" id="">
                         <option value="">-Pilih Dosen Wali-</option>
                         <?php
                             include('../koneksi.php');
-                            $sql_dos = "SELECT * FROM dosens";
+                            $sql_dos = "SELECT * FROM dosens WHERE jabatan='Full Time'";
                             $qry_dos = mysqli_query($koneksi,$sql_dos);
                             foreach($qry_dos as $data_dos){
                                 ?>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Foto</label>
-                    <input type="file" name="nama" class="form-control" id="exampleInputPassword1">
+                    <input type="file" accept="image/*" name="foto" class="form-control" id="exampleInputPassword1">
                 </div>
                 
                 <button type="submit" class="btn btn-primary">Submit</button>
